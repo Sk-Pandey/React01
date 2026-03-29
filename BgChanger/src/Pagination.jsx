@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Pagination = () => {
-  const [Color, setColor] = useState("bg-violet-500");
+  const [Color, setColor] = useState("bg-rose-400");
   return (
     <div className={`container ${Color}`}>
       <div className="join">
