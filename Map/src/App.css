@@ -1,0 +1,22 @@
+@import "tailwindcss";
+body {
+  background-color: rgb(231, 110, 89);
+  color: white;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 800;
+  font-variant: small-caps;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.759);
+}
+.webname {
+  text-align: center;
+  font-size: 48px;
+  font-variant: normal;
+  color: blanchedalmond;
+  margin-top: 30px;
+}
