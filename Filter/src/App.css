@@ -1,0 +1,21 @@
+@import "tailwindcss";
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: rgb(60, 59, 59);
+}
+h3 {
+  font-weight: 18px;
+  font-weight: 800;
+  color: rgb(31, 33, 31);
+}
+.cat {
+  font-weight: 18px;
+  font-weight: 700;
+  color: tomato;
+}
