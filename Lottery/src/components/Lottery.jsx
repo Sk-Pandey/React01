@@ -33,7 +33,7 @@ const Lottery = () => {
           <div className="justify-end card-actions mt-4">
             <button
               onClick={() => setNumber(lottery())}
-              className="btn btn-primary active:scale-95"
+              className="btn btn-primary active:scale-95x"
             >
               New Lottery
             </button>
