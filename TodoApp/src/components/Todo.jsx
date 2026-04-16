@@ -46,7 +46,7 @@ const Todo = () => {
 
           <button
             onClick={addtask}
-            className="bg-teal-600 hover:bg-teal-500 px-4 py-2 rounded-lg text-white active:scale-95 transition"
+            className="bg-teal-600 hover:bg-teal-500 px-4 py-2 cursor-pointer rounded-lg text-white active:scale-95 transition"
           >
             Add
           </button>
