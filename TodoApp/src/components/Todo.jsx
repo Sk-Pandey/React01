@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-
+import { v4 as uuidv4 } from "uuid";
 const Todo = () => {
-  const [tasks, setTasks] = useState(["Eat", "Sleep", "Study"]);
+  const [tasksList, setTasksList] = useState([{ id: uuidv4(), task: "eat" }]);
   const [input, setInput] = useState("");
   function addtask() {
     if (input.trim() !== "") {
-      setTasks((prev) => [...prev, input]);
+      setTasksList((prev) => [...prev, { id: uuidv4(), task: input }]);
       setInput("");
     } else {
       alert("Please Enter Task First");
@@ -33,10 +33,10 @@ const Todo = () => {
       <div className="mt-3">
         <h1 className="text-3xl font-bold">Task List</h1>
         <ul className="bg-rose-200 p-4 rounded-lg">
-          {tasks.map((task, index) => {
+          {tasksList.map((task, index) => {
             return (
-              <li key={index}>
-                {index + 1}. {task}
+              <li key={task.id}>
+                {index + 1}. {task.task}
               </li>
             );
           })}
